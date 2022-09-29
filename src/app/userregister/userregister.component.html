@@ -1,0 +1,11 @@
+<form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+
+    <label for="fname">Name</label>
+    <input type = "text" name = "name" placeholder = "name" ngModel>
+    <br/>
+
+    <label for="fname">Job</label>
+    <input type = "text" name = "job" placeholder = "job" ngModel>
+    <br/>
+    <input type = "submit" value = "submit">
+ </form>

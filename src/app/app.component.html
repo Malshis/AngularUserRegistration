@@ -1,0 +1,78 @@
+<!-- <html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+  <h1>LIST USER</h1>
+
+  <table style="width:100%">
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Year</th>
+      <th>Pantone Value</th>
+      <th>color</th>
+    </tr>
+    <tr *ngFor="let dataUnknowm of unknowm">
+      <td>{{dataUnknowm.id}}</td>
+      <td>{{dataUnknowm.name}}</td>
+      <td>{{dataUnknowm.year}}</td>
+      <td>{{dataUnknowm.pantone_value}}</td>
+      <td>{{dataUnknowm.color}}</td>
+    </tr>
+  </table>
+  
+</body>
+</html> -->
+
+<!Doctype html>
+<html>
+<style>
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+</style>
+<body>
+
+<h1>FRONT END DEVELOPER TEST</h1>
+
+<div class="btn-group">
+  <button (click) = "userRegisterOnClick()">Create User</button>
+  <button (click) = "userGetOnClick()">Get Users</button>
+  <button>Update User</button>
+  <button>Delete User</button>
+</div>
+
+</body>
+</html>
+
+
+
+
+<!-- <button (click) = "userRegisterOnClick()"> Register User </button> -->
+
+<router-outlet></router-outlet>

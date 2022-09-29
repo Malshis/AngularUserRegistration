@@ -1,0 +1,29 @@
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+  <h1>LIST USER</h1>
+
+  <table style="width:100%">
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Year</th>
+      <th>Pantone Value</th>
+      <th>color</th>
+    </tr>
+    <tr *ngFor="let dataUnknowm of unknowm">
+      <td>{{dataUnknowm.id}}</td>
+      <td>{{dataUnknowm.name}}</td>
+      <td>{{dataUnknowm.year}}</td>
+      <td>{{dataUnknowm.pantone_value}}</td>
+      <td>{{dataUnknowm.color}}</td>
+    </tr>
+  </table>
+  
+</body>
+</html>
